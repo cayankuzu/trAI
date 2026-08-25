@@ -1,0 +1,23 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next
+/out
+
+# local environment files
+.env*
+!.env.example
+
+# logs and editor files
+*.log
+*.tsbuildinfo
+.DS_Store
+.vscode
+
+# local QA artifacts and dev-server output
+/tmp/
+
+# local deployment and Supabase CLI metadata
+/.vercel/
+/supabase/.temp/

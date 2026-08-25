@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>trAI e-posta doğrulama</title>
+  </head>
+  <body style="margin:0;background:#f5f6f8;color:#121418;font-family:Arial,Helvetica,sans-serif;">
+    <div style="display:none;max-height:0;overflow:hidden;opacity:0;">trAI hesabını etkinleştirmek için e-posta adresini doğrula.</div>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#f5f6f8;">
+      <tr>
+        <td align="center" style="padding:32px 16px;">
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:600px;border:1px solid #dce0e5;border-radius:20px;background:#ffffff;box-shadow:0 18px 50px rgba(20,24,32,.08);">
+            <tr>
+              <td style="padding:30px 32px 18px;">
+                <span style="font-size:24px;font-weight:800;letter-spacing:-1px;color:#941f43;">trAI</span>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:10px 32px 34px;">
+                <div style="width:52px;height:52px;border-radius:14px;background:#fbe9ef;color:#941f43;font-size:25px;line-height:52px;text-align:center;">✓</div>
+                <p style="margin:24px 0 8px;color:#941f43;font-size:12px;font-weight:700;letter-spacing:1.2px;">HESABINI ETKİNLEŞTİR</p>
+                <h1 style="margin:0 0 14px;font-size:30px;line-height:1.2;letter-spacing:-.7px;">E-posta adresini doğrula</h1>
+                <p style="margin:0 0 26px;color:#555d68;font-size:16px;line-height:1.65;">trAI hesabını kullanmaya başlamak için aşağıdaki güvenli bağlantıya tıkla. Doğrulamadan sonra ilk sanal provanı oluşturabilirsin.</p>
+                <table role="presentation" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td style="border-radius:12px;background:#941f43;">
+                      <a href="{{ .RedirectTo }}?token_hash={{ .TokenHash }}&amp;type=email" style="display:inline-block;padding:15px 24px;color:#ffffff;font-size:15px;font-weight:700;text-decoration:none;">E-postamı doğrula</a>
+                    </td>
+                  </tr>
+                </table>
+                <p style="margin:26px 0 8px;color:#555d68;font-size:13px;line-height:1.55;">Buton çalışmazsa bu bağlantıyı tarayıcına yapıştır:</p>
+                <p style="margin:0;word-break:break-all;color:#941f43;font-size:12px;line-height:1.55;"><a href="{{ .RedirectTo }}?token_hash={{ .TokenHash }}&amp;type=email" style="color:#941f43;">{{ .RedirectTo }}?token_hash={{ .TokenHash }}&amp;type=email</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td style="border-top:1px solid #e7e9ed;padding:22px 32px;color:#737b86;font-size:12px;line-height:1.6;">Bu hesabı sen oluşturmadıysan e-postayı güvenle yok sayabilirsin. trAI ekibi hiçbir zaman e-posta üzerinden şifreni istemez.</td>
+            </tr>
+          </table>
+          <p style="margin:18px 0 0;color:#89909a;font-size:11px;">© trAI · AI destekli sanal prova</p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
